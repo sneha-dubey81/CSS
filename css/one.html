@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:500px;
+            background-color: beige;
+            border:2px solid black;
+            margin: 2px;
+            padding: 2px;
+            display:flex;
+            flex-direction: row;
+        }
+        #boxleft{
+            width: 45%;
+            background-color: darkolivegreen;
+            border:2px solid green;
+            margin: 2px;
+            padding: 2px;
+        }
+        #boxright{
+            width: 45%;
+            background-color: chocolate;
+            border:2px solid orange;
+            margin: 2px;
+            padding: 2px;
+        }
+        img{
+            width: 200px;
+            height:240px;
+        }
+        p{
+            background-color: darkgreen;
+            border: 2px solid lightgreen;
+            color: lightgreen;
+        }
+        @media (min-width:640px){
+            .container{
+                flex-direction: row;
+            }
+        }
+        @media (max-width:640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="boxleft">
+            <p>Text1</p>
+            <p>Text2</p>
+        </div>
+        <div class="box" id="boxright">
+            <img src="pexels-sagar-gaikwad-1402891191-32704723.jpg"/>
+        </div>
+    </div> 
+</body>
+</html>

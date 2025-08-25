@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .ball{
+            background:linear-gradient(pink,purple);
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            animation-name: hello;
+            animation-duration: 2s;
+            position: absolute;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function:ease-in;
+        }
+        @keyframes hello{
+            0%{
+                top:0px;
+                transform: rotate(0deg);
+            }
+            100%{
+                top:900px;
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

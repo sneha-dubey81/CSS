@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+    <style>
+        @keyframes rightToCenter {
+            0% {
+                transform: translateX(100px);
+            }
+
+            /* start already right */
+            50% {
+                transform: translateX(-100px);
+            }
+
+            /* slide left */
+            100% {
+                transform: translateX(0);
+            }
+
+            /* return to center */
+        }
+
+        .hover\:animate-rightToCenter:hover {
+            animation: rightToCenter 1.5s ease-in-out forwards;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <div class=" h-screen bg-black">
+        <!-- NAVBAR -->
+        <nav class="text-white flex w-full justify-between">
+            <div class="flex w-80">
+                <div class="text-4xl w-20 mt-6 ml-15 font-bold">Sneha</div>
+                <div class="mt-7 ml-15 rounded-full w-15 border-3 border-amber-400"><i
+                        class="fa-solid fa-moon  ml-2 mr-3 text-amber-400"></i><i class="fa-solid fa-sun mt-2"></i>
+                </div>
+            </div>
+            <div class="flex w-170 text-xl justify-between mt-6 mr-15">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Interested</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Testimonial</a>
+                <button class="bg-amber-400 rounded-3xl h-10 w-30">Contact</button>
+            </div>
+        </nav>
+        <!-- BODY-INTRO & IMG -->
+        <div class="body_section flex">
+            <div class="left w-[50%] flex flex-col justify-center item-center m-30 ">
+                <div>
+                    <p class="text-white text-6xl">Hyy! I Am</p>
+                    <p class="text-amber-400 text-7xl mt-5 font-bold">Sneha Dubey</p>
+                    <p class="text-white mt-15">I'm studying in BGIEM</p>
+                </div>
+                <button class="text-white bg-amber-400 h-10 w-30 rounded-2xl mt-10 font-bold ">Hire Me</button>
+                <div class="flex w-55 mt-18 text-5xl justify-between text-amber-400">
+                    <!-- <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i> -->
+                    <a href="https://github.com/sneha-dubey81/Java"><i class="fa-brands fa-github "></i></a>
+                    <a
+                        href="https://www.linkedin.com/in/sneha-dubey-03262b30b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                            class="fa-brands fa-linkedin "></i></a>
+                    <a href="https://www.instagram.com/_sneha.dubey?igsh=OG9tZDdyYWVpbWZj"><i
+                            class="fa-brands fa-instagram "></i></a>
+                </div>
+            </div>
+            <div class="right w-[50%] ">
+                <!-- image -->
+                <img class="bg-cover bg-[url('me.jpg')] h-110 w-110 ml-15 mt-27 rounded-full absolute">
+                <div
+                    class="flex relative flex-wrap h-15 w-50 bg-white p-2 rounded-full relative mt-130 ml-44 transition-transform delay-200 duration-500 hover:-translate-x-65">
+                    <div class="m-3">
+                        <i class="fa-solid fa-medal text-amber-400 text-lg"></i>
+                    </div>
+                    <div class="text-sm text-black m-3">
+                        Best Design Award
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services -->
+        <div class="h-screen">
+            <!-- my awesome services -->
+            <div class="absolute [60%] w-[40%] ">
+                <div class="text-white mt-25 ml-25">
+                    <p class="text-6xl font-bold ">My Awesome</p>
+                    <p class="text-5xl font-bold text-amber-400 mt-5">Services</p>
+                    <p class="mt-10 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ullam
+                        pariatur
+                        est aperiam sapiente nemo minus, dolorum ratione sint esse ab fugiat laudantium corporis optio
+                        hic, voluptatibus, veniam laboriosam quam.</p>
+                </div>
+                <button class="h-10 w-40 bg-amber-400 text-white ml-25 rounded-3xl mt-10">Download CV</button>
+            </div>
+            <!-- cards -->
+            <div class=" relative h-screen w-[50%] ml-100 hover:animate-rightToCenter">
+                <div class="h-[48%]  border-1 border-transparent ">
+                    <!-- card 1 -->
+                    <div class="h-60 w-45 bg-white rounded-xl ml-125 mt-23 ">
+                        <i class="fa-solid fa-face-grin-wide text-amber-400 text-5xl ml-17 mt-10"></i>
+                        <p class="m-17 text-black text-xl">HTML</p>
+                    </div>
+                    <button class="h-8 w-30 text-blue-700 text-xl bg-white rounded-lg ml-133 mt-5 ">Learn More</button>
+                </div>
+                <div class=" h-[52%] flex border-1 border-transparent ">
+                    <div>
+                        <!-- card 2 -->
+                        <div class="h-60 w-45 bg-white rounded-xl  ml-35 ">
+                            <i class="fa-solid fa-face-kiss-wink-heart text-amber-400 text-5xl ml-17 mt-10"></i>
+                            <p class="m-17 text-black text-xl">CSS</p>
+                        </div>
+                        <button class="h-8 w-30 text-blue-700 text-xl bg-white rounded-lg ml-42 mt-5">Learn
+                            More</button>
+                    </div>
+                    <div>
+                        <!-- card 3 -->
+                        <div class="h-60 w-45 bg-white rounded-xl ml-30  mt-25 ">
+                            <i class="fa-solid fa-face-grin-stars text-amber-400 text-5xl ml-17 mt-10"></i>
+                            <p class="m-17 text-black text-xl">Java</p>
+                        </div>
+                        <button class="h-8 w-30 text-blue-700 text-xl bg-white rounded-lg ml-38 mt-5 ">Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brands -->
+        <div class="h-screen border-3  flex">
+            <div class="h-130 w-130 border-3 m-30">
+                <p class="text-5xl text-white font-bold mt-25">I want to work for</p>
+                <p class="text-5xl text-amber-400 font-bold mt-5">These brands</p>
+                <p class="text-sm text-white mt-15">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi aut
+                    quia, at voluptates quam aliquam facilis accusamus nam dolore quaerat, eligendi eveniet iste quas
+                    quo reiciendis asperiores, deserunt praesentium sit?</p>
+                <button class="h-10 w-40 bg-amber-400 text-white text-lg rounded-lg mt-17">Hire Me</button>
+            </div>
+            <div class="h-130 w-140 border-3  mt-30 ">
+                <div class="h-60 w-60 bg-blue-700 rounded-full z-0 relative ml-65 mt-10"></div>
+                <div class="h-60 w-60 bg-amber-400 rounded-full z-1 absolute -mt-15 ml-65"></div>
+                <div class="h-80 w-80 bg-white rounded-full z-3 absolute -mt-45 ml-25"></div>
+                <div
+                    class="h-110 w-110   rounded-full -mt-60 ml-9 absolute z-8 flex transform transition-transform duration-500 hover:rotate-45">
+                    <div class="h-27 w-27 border-3 border-gray-400  bg-white rounded-full absolute z-4 mt-1.5 ml-42   ">
+                        <i class="fa-brands fa-shopify text-5xl text-lime-600 ml-7.5 mt-6.5"></i>
+                    </div>
+                    <div class="h-29 w-29 border-3 border-gray-400  bg-white rounded-full absolute z-4   self-center ">
+                        <i
+                            class="fa-brands fa-google text-5xl ml-8 mt-7.5  bg-[conic-gradient(from_343deg,_red,_blue,_green,_yellow)] bg-clip-text text-transparent"></i>
+                    </div>
+                    <div class="h-27 w-27 border-3 border-gray-400  bg-white rounded-full absolute z-4 ml-42 mt-81 ">
+                        <i class="fa-brands fa-facebook text-5xl text-blue-800 ml-7 mt-7.5"></i>
+                    </div>
+                    <div
+                        class="h-29 w-29 border-3 border-gray-400  bg-white rounded-full absolute z-4 self-center ml-80   ">
+                        <i class="fa-brands fa-linkedin text-5xl text-blue-800 ml-9 mt-7"></i>
+                    </div>
+                    <div
+                        class="h-27 w-27 border-3 border-gray-400  bg-white rounded-full absolute z-4 self-center ml-41 ">
+                        <i class="fa-brands fa-apple text-5xl ml-8 mt-7"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact -->
+        <div class="h-screen border-3  flex">
+            <div class="h-130 w-130 border-3   m-30">
+                <p class="text-5xl font-bold text-amber-400 mt-20 ml-30">Get in Touch</p>
+                <p class="text-5xl font-bold text-white mt-5 ml-30">Contact me</p>
+            </div>
+            <div class="h-120 w-100 border-3   mt-30 ">
+                <label>
+                    <input
+                        class="placeholder:text-gray-500 placeholder:italic bg-white mt-10 rounded-lg border-3 border-amber-400 h-10 w-90"
+                        placeholder="Name" type="text" name="name" />
+                </label>
+                <label>
+                    <input
+                        class="placeholder:text-gray-500 placeholder:italic bg-white mt-8 rounded-lg border-3 border-amber-400 h-10 w-90"
+                        placeholder="Email" type="email" name="email" />
+                </label>
+                <label>
+                    <input
+                        class="placeholder:text-gray-500 placeholder:italic bg-white mt-8 rounded-lg border-3 border-amber-400 h-20 w-90"
+                        placeholder="Message" type="text" name="message" />
+                </label>
+                <div class="h-40 w-90 border-1  mt-10 flex justify-center">
+                    <button class="h-10 w-20 bg-amber-400 text-lg text-white rounded-full">Send</button>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="h-auto -mt-100">
+            <img src="https://imgs.search.brave.com/I8V0qj_IPWUgVwxM9R18oTBc-0fkOfN52ml85v4A9R8/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzUv/Nzc3Lzc4MC9zbWFs/bC9vcmFuZ2UtZ29s/ZC1mb290ZXItZm9v/dGVyLWRlc2lnbi1l/bGVtZW50LWZyZWUt/cG5nLnBuZw"
+                class="w-[100%]">
+            <div class="z-3 -mt-39 ml-25 ">
+                <p class="text-white text-2xl">sneha.dubey2005@gmail.com</p>
+                <div class="flex text-4xl text-white mt-10 gap-10 ">
+                    <a href="https://github.com/sneha-dubey81/Java"><i class="fa-brands fa-github "></i></a>
+                    <a
+                        href="https://www.linkedin.com/in/sneha-dubey-03262b30b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                            class="fa-brands fa-linkedin "></i></a>
+                    <a href="https://www.instagram.com/_sneha.dubey?igsh=OG9tZDdyYWVpbWZj"><i
+                            class="fa-brands fa-instagram "></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

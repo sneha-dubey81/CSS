@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+}
+#navList{
+    width: 100%;
+    margin: 15px;
+    list-style-type: none;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    align-items:center;
+}
+.navContainer{
+    min-height: 80px;
+    width: 100vw;
+    background-color: rgb(53, 4, 50);
+    display: flex;
+    justify-content:center;   
+    align-items:center;
+}    
+#navLogo{
+    font-size:2.8rem;
+    color: rgb(252, 135, 248);
+}
+#navContent{
+    width: 50%;
+    display: flex;
+    gap: 40px;
+}
+#navContent a{
+    color:rgba(249, 200, 255, 0.964) ;
+    text-decoration: none;
+}

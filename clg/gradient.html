@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 2px;
+            padding: 1px;
+        }
+        flex{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        div{
+            height: 300px;
+            width: 350px;
+        }
+        .one{
+            background: linear-gradient(to right,blue,red);
+        }
+        .two{
+            background: repeating-linear-gradient(45deg,blue 10px,red 10px,pink 20px);
+        }
+        .three{
+            background: radial-gradient(red,rgb(181, 17, 17),rgb(120, 8, 4));
+        }
+        .four{
+            background: repeating-radial-gradient(red 10px,rgb(181, 17, 17) 10px,rgb(120, 8, 4) 20px);
+        }
+        .five{
+            background: conic-gradient(red,orange,yellow,blue,green,violet,indigo);
+        }
+        .six{
+            background: radial-gradient(ellipse at center,rgb(232, 136, 136),rgb(243, 86, 193),rgb(202, 46, 40));
+        }
+        .seven{
+            background: repeating-conic-gradient(rgb(235, 87, 111) 0deg 20deg,rgb(73, 3, 73) 20deg 40deg);
+        }
+        .eight{
+            background: repeating-conic-gradient(rgb(241, 107, 129),rgb(234, 62, 91) );
+        }
+    </style>
+</head>
+<body>
+    <flex>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+    <div class="seven"></div>
+    <div class="eight"></div>
+    </flex>
+</body>
+</html>

@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :root{
+            --primary-color:rgb(243, 186, 195);
+            --custom-width: 350px;
+        } */
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 3px solid black;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            --primary-color:rgb(246, 196, 204);
+            /* background-color: pink; */
+            --custom-width: 350px;
+            background-color: var(--primary-color);
+            height: 350px;
+            /* width: 350; */
+            width: var(--custom-width);
+            border: 3px solid brown;
+            margin: 100px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* box-shadow: 25px 25px 60px 15px rgb(193, 126, 137); */
+            box-shadow: inset 25px 25px 60px 15px rgb(190, 124, 135);
+            /* box-shadow: 10px 10px red , 10px 10px green; */
+        }
+        img{
+            width: 100px;
+            height: 150px;
+        }
+        h2{
+            color: maroon;
+            text-shadow: 2px 2px 4px rgb(79, 26, 26);
+        }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+    <div class="box">
+        <img src="pexels-sagar-gaikwad-1402891191-32704723.jpg" />
+        <h2 id="name">MEOWW</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora placeat ducimus eum reprehenderit? Voluptatum molestias optio ipsa harum repellat reprehenderit, provident nemo maiores fugit iste voluptas aliquam, voluptate ullam omnis!</p>
+    </div>
+    </div>
+ </body>
+ </html>

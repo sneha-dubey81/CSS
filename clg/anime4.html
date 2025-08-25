@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+   body{
+   
+    background:linear-gradient(red,skyblue);
+    height: 100vh;
+   }
+    .road{
+        height: 35vh;
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        background-color: black;
+
+        /* justify-content: space-between; */
+        display: flex;
+        align-items: center;
+
+    }
+    .class{
+        height: 10px;
+        /* width: 100px; */
+        width: 100%;
+        position: absolute;
+        /* top: 65px; */
+        margin: 10px;
+        /* background-color: white; */
+        background: repeating-linear-gradient(to right, white 0px ,white 100px ,transparent 100px ,transparent 200px);
+        animation-name: rupeshsir;
+        animation-duration:900ms ;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      
+    }
+    @keyframes rupeshsir{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-200px);
+        }
+    }
+    .car{
+        height: 90px;
+        width: 200px;
+        background-color: brown;
+        position: absolute;
+        border-radius: 20px;
+    }
+    .leftwheel{
+        height: 3rem;
+        width: 3rem;
+        border: 2px solid white;
+        border-radius: 50%;
+        background:linear-gradient(yellow,black);
+        position: absolute;
+        bottom: -40px;
+        animation-name: sir;
+        animation-duration: 2s;
+        animation-iteration-count:infinite ;
+        animation-timing-function: linear;
+    }
+    .rightwheel{
+        height: 3rem;
+        width: 3rem;
+        border: 2px solid white;
+        border-radius: 50%;
+        background:linear-gradient(yellow,black);
+        position: absolute;
+        bottom: -40px;
+        right: 10px;
+        animation-name: sir;
+        animation-duration: 2s;
+        animation-iteration-count:infinite ;
+        animation-timing-function: linear;
+    }
+    @keyframes sir{
+        0%{
+           transform: rotate(0);
+        }
+        100%{
+            transform: rotate(360deg);
+
+        }
+    }
+
+  </style>
+  <body>
+
+      <div class="road">
+      
+        <div class="class"></div>
+        <!-- <div class="class"></div>
+        <div class="class"></div>
+        <div class="class"></div>
+        <div class="class"></div>
+        <div class="class"></div> -->
+        <div class="car">
+       
+            <div class="leftwheel"></div>
+            <div class="rightwheel"></div>
+          </div>
+      </div>
+      
+
+  </body>
+</html>

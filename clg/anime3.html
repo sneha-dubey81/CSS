@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .road{
+            width: 100vw;
+            height:30vh; 
+            display: flex;
+            align-items: center;
+        }
+        .car{
+            animation-name: moving;
+            animation-duration:6s;
+            position: relative ;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .road-img{
+            position: absolute;
+            height: 30vh;
+            width: 100%;
+            object-fit: cover;
+        }
+        .car-img{
+            height: 20vh;
+            width:40vh;
+        }
+        @keyframes moving{
+            0%{
+                top: 0;
+                left: 0;
+                transform: rotateY(0deg);
+            }
+            49%{
+                left:1350px;
+                transform:  rotateY(0deg);
+            }
+            50%{
+                left:1350px;
+                transform: rotateY(180deg); 
+            }
+            100%{
+                top: 0;
+                left: 0;
+                transform: rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="road">
+            <img src="Road2.png" class="road-img"  />
+        <div class="car">
+            <img src="car.png" class="car-img"  />
+        </div>
+        </div>
+    </div>
+</body>
+</html>
