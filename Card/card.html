@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* *{
-            margin: 0;
-            padding:0;
-        } */
-        .container {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
             height: 100vh;
             width: 100vw;
+            min-height: 980px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,38 +24,44 @@
 
         .card {
             background: linear-gradient(purple, aqua);
-            height: 500px;
-            width: 300px;
+            height: 600px;
+            width: 360px;
             border-radius: 15px;
             display: flex;
             flex-direction: column;
-            margin: 25px;
-            padding: 25px;
-
+            align-items: center;
+            gap: 25px;
+ 
         }
 
         .box {
-            height: 40%;
-            width: 100%;
+            height:35%;
+            width: 85%;
             background-color: black;
             border-radius: 15px;
+            margin-top: 27px;
         }
-
+        .body{
+            height: 40%;
+            width: 85%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
         #title {
             font-size: 1.5rem;
             color: white;
         }
 
         #new {
-            position: relative;
             display: flex;
             width: 60px;
             height: 30px;
             color: white;
             background-color: rgb(0, 237, 254);
             border-radius: 30px;
-            top: 13px;
-            left: 13px;
+            margin-top: 10px;
+            margin-left: 10px;
             justify-content: center;
             align-items: center;
             color: black;
@@ -72,12 +79,10 @@
         .one {
             background-color: rgba(172, 167, 167, 0.33);
             border: 2px solid rgba(128, 128, 128, 0.579);
-            border-radius: 10px;
             color: white;
-            position: relative;
             display: flex;
-            width: 100px;
-            height: 26px;
+            width: 120px;
+            height: 35px;
             border-radius: 30px;
             justify-content: center;
             align-items: center;
@@ -105,7 +110,8 @@
 
         #two {
             display: flex;
-            justify-content: space-between;
+            gap: 170px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -114,7 +120,7 @@
     <div class="container m-0">
         <div class="card">
             <div class="box"> <span id="new"> New </span></div>
-            <div>
+            <div class="body">
                 <p id="title">Pro UI Components</p>
                 <p id="subtitle">Glass &middot; Gradient &middot; Simple Motion</p>
                 <div class="compo">
