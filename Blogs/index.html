@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 100%;
+            width: 55%;
+            margin-top: 45px;
+        }
+        .header{
+            height: 18%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5px;
+            
+        }
+        .header p{
+            color:rgb(91, 90, 90);
+            font-size: 1rem;
+        }
+        .header h2{
+            margin-bottom: 8px;
+        }
+        .cardContainer{
+            width: 100%;
+            height: 80%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 20px
+        }
+        .card{
+            width: 100%;
+            border: 2px solid rgb(181, 173, 173);
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        img{
+            height: 180px;
+            width:100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .image{
+            width: 100%;
+            height: 180px;
+        }
+        .bodyCard{
+            height: 60px;
+            width: 78%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #subtitle{
+            font-size: x-small;
+            color: rgb(93, 91, 91);
+        }
+        #name{
+            color: rgb(108, 169, 238);
+            font-size: 1rem;
+        }
+        #date{
+            color: rgb(136, 127, 127);
+            font-size: 0.5rem;
+        }
+        #two{
+            /* display: flex;
+            align-items: center; */
+            font-size: small;
+            color: rgb(136, 127, 127);
+            border: 1.5px solid rgb(181, 173, 173);
+            border-radius: 5px;
+            padding: 3px;
+        }
+        .footerCard{
+            display: flex;
+            gap: 2.5rem;
+            height: 20px;
+            width: 100%;
+        }
+        #one{
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>CodeHelp</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+            <p> Cumque soluta id perspiciatis, maiores dolorem autem molestias eos.</p>
+        </div>
+        <div class="cardContainer">
+            <div class="card">
+                <div class="image"><img src="https://plus.unsplash.com/premium_photo-1756309324957-12aecdb95e74?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8aG1lbnZRaFVteE18fGVufDB8fHx8fA%3D%3D" alt=""></div>
+                <div class="bodyCard">
+                    <p id="title">Power of positivity</p>
+                    <p id="subtitle">Power of Positivity celebrates the lifestyle of positive thinking and attitude. Improve your life and others with the power of positivity!</p>
+                </div>
+                <div class="footerCard">
+                    <div id="one"><i class="fa-solid fa-user"></i> 
+                    <span>
+                    <p id="name">John Doe</p>
+                    <p id="date">Sept 19, 2021</p>
+                    </span></div>
+                    <div id="two">Technology</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"><img src="https://plus.unsplash.com/premium_photo-1756309324957-12aecdb95e74?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8aG1lbnZRaFVteE18fGVufDB8fHx8fA%3D%3D" alt=""></div>
+                <div class="bodyCard">
+                    <p id="title">Power of positivity</p>
+                    <p id="subtitle">Power of Positivity celebrates the lifestyle of positive thinking and attitude. Improve your life and others with the power of positivity!</p>
+                </div>
+                <div class="footerCard">
+                    <div id="one"><i class="fa-solid fa-user"></i>
+                    <span>
+                    <p id="name">John Doe</p>
+                    <p id="date">Sept 19, 2021</p>
+                    </span></div>
+                    <div id="two">Technology</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"><img src="https://plus.unsplash.com/premium_photo-1756309324957-12aecdb95e74?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8aG1lbnZRaFVteE18fGVufDB8fHx8fA%3D%3D" alt=""></div>
+                <div class="bodyCard">
+                    <p id="title">Power of positivity</p>
+                    <p id="subtitle">Power of Positivity celebrates the lifestyle of positive thinking and attitude. Improve your life and others with the power of positivity!</p>
+                </div>
+                <div class="footerCard">
+                    <div id="one"><i class="fa-solid fa-user"></i>
+                    <span>
+                    <p id="name">John Doe</p>
+                    <p id="date">Sept 19, 2021</p>
+                    </span></div>
+                    <div id="two">Technology</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"><img src="https://plus.unsplash.com/premium_photo-1756309324957-12aecdb95e74?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8aG1lbnZRaFVteE18fGVufDB8fHx8fA%3D%3D" alt=""></div>
+                <div class="bodyCard">
+                    <p id="title">Power of positivity</p>
+                    <p id="subtitle">Power of Positivity celebrates the lifestyle of positive thinking and attitude. Improve your life and others with the power of positivity!</p>
+                </div>
+                <div class="footerCard">
+                    <div id="one"><i class="fa-solid fa-user"></i> 
+                    <span>
+                    <p id="name">John Doe</p>
+                    <p id="date">Sept 19, 2021</p>
+                    </span></div>
+                    <div id="two">Technology</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"><img src="https://plus.unsplash.com/premium_photo-1756309324957-12aecdb95e74?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8aG1lbnZRaFVteE18fGVufDB8fHx8fA%3D%3D" alt=""></div>
+                <div class="bodyCard">
+                    <p id="title">Power of positivity</p>
+                    <p id="subtitle">Power of Positivity celebrates the lifestyle of positive thinking and attitude. Improve your life and others with the power of positivity!</p>
+                </div>
+                <div class="footerCard">
+                    <div id="one"><i class="fa-solid fa-user"></i>
+                    <span>
+                    <p id="name">John Doe</p>
+                    <p id="date">Sept 19, 2021</p>
+                    </span></div>
+                    <div id="two">Technology</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"><img src="https://plus.unsplash.com/premium_photo-1756309324957-12aecdb95e74?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8aG1lbnZRaFVteE18fGVufDB8fHx8fA%3D%3D" alt=""></div>
+                <div class="bodyCard">
+                    <p id="title">Power of positivity</p>
+                    <p id="subtitle">Power of Positivity celebrates the lifestyle of positive thinking and attitude. Improve your life and others with the power of positivity!</p>
+                </div>
+                <div class="footerCard">
+                    <div id="one"><i class="fa-solid fa-user"></i>
+                    <span>
+                    <p id="name">John Doe</p>
+                    <p id="date">Sept 19, 2021</p>
+                    </span></div>
+                    <div id="two">Technology</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"><img src="https://plus.unsplash.com/premium_photo-1756309324957-12aecdb95e74?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8aG1lbnZRaFVteE18fGVufDB8fHx8fA%3D%3D" alt=""></div>
+                <div class="bodyCard">
+                    <p id="title">Power of positivity</p>
+                    <p id="subtitle">Power of Positivity celebrates the lifestyle of positive thinking and attitude. Improve your life and others with the power of positivity!</p>
+                </div>
+                <div class="footerCard">
+                    <div id="one"><i class="fa-solid fa-user"></i>
+                    <span>
+                    <p id="name">John Doe</p>
+                    <p id="date">Sept 19, 2021</p>
+                    </span></div>
+                    <div id="two">Technology</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"><img src="https://plus.unsplash.com/premium_photo-1756309324957-12aecdb95e74?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8aG1lbnZRaFVteE18fGVufDB8fHx8fA%3D%3D" alt=""></div>
+                <div class="bodyCard">
+                    <p id="title">Power of positivity</p>
+                    <p id="subtitle">Power of Positivity celebrates the lifestyle of positive thinking and attitude. Improve your life and others with the power of positivity!</p>
+                </div>
+                <div class="footerCard">
+                    <div id="one"><i class="fa-solid fa-user"></i>
+                    <span>
+                    <p id="name">John Doe</p>
+                    <p id="date">Sept 19, 2021</p>
+                    </span></div>
+                    <div id="two">Technology</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(67, 63, 63);
+            display: grid;
+            gap: 10px;
+            grid-template-rows: repeat(6, 1fr);
+            /* grid-template-columns: repeat(3, 1fr); */
+        }
+
+        .item {
+            background-color: rgb(196, 61, 76);
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: wheat;
+            font-size: large;
+        }
+
+        
+
+        @media (min-width:750px) {
+            .container {
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+            }
+            #one {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        #two {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        #three {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        #six {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="one">Header</div>
+        <div class="item" id="two">Sidebar</div>
+        <div class="item" id="three">Content 1</div>
+        <div class="item" id="four">Content 2</div>
+        <div class="item" id="five">Content 3</div>
+        <div class="item" id="six">Footer</div>
+    </div>
+</body>
+
+</html>

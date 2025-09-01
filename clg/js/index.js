@@ -19,22 +19,27 @@
 // let to=a==100
 // console.log(to)
 
-const c=2
-console.log(c);   //cant be changed or reassigned
+// const c=2
+// console.log(c);   //cant be changed or reassigned
 
-console.log(s=true)  //assignment
+// console.log(s=true)  //assignment
 
-let userName="Sneha"
-let lastName="dubey"
-console.log(`${userName} ${lastName}`)
+// let userName="Sneha"
+// let lastName="dubey"
+// console.log(`${userName} ${lastName}`)
 
-//ternary operator
-let a=false 
-a?console.log("hiiii"):console.log("byeee");
+// //ternary operator
+// let a=false 
+// a?console.log("hiiii"):console.log("byeee");
 
-if(a=true){
-    console.log("hello");
-}
-else{
-    console.log("hiii");
+// if(a=true){
+//     console.log("hello");
+// }
+// else{
+//     console.log("hiii");
+// }
+
+sum()
+let sum=()=>{
+    console.log("hii");
 }
