@@ -44,10 +44,10 @@
         // a=5
         // console.log(a)
 
-    //    sum()
-    //     var sum=()=>{
-            // console.log("hii");  //reference error
-    //     }
+        //    sum()
+        //     var sum=()=>{
+        // console.log("hii");  //reference error
+        //     }
         // sum()
 
         // let a=5
@@ -95,7 +95,7 @@
         // }
         // let a= outer()
         // a()
-        
+
         // function outer(a){
         //     a()
         // }        
@@ -110,10 +110,70 @@
         // console.log(typeof(typeof(true)));   //string
         // console.log(typeof(String));         //function
 
-        let arr=[2,"hello",true]
-        for(let i=0;i<arr.length;i++){
-            console.log(arr[i],typeof(arr[i]));           
-        }
+        // let arr=[2,"hello",true]
+        // for(let i=0;i<arr.length;i++){
+        //     console.log(arr[i],typeof(arr[i]));           
+        // }
+
+        // console.log(x ===undefined); // true
+        // var x = 3;
+
+        // (function () {
+        //     console.log(x); // undefined
+        //     var x = "local value";
+        // })();
+
+        // let arr=[1,2,3,4,5]
+        // Array.prototype.myfilter=function(cb){
+        //     let res=[]
+        //     for(let i=0;i<this.length;i++){
+        //         if(cb(this[i],i,this)){
+        //             res.push(this[i])
+        //         }
+        //     }
+        //     return res
+        // }
+        // let data=arr.myfilter((a,b,c)=>{
+        //     return a%2==0
+        // })
+        // console.log(data)
+
+        // function step1(fn){
+        //     setTimeout(()=>{
+        //         console.log("photo select");
+        //         fn()
+        //     },5000)
+        // }
+        // function step2(fn){
+        //     setTimeout(()=>{
+        //         console.log("caption");
+        //         fn()
+        //     },4000)
+        // }
+        // function step3(fn){
+        //     setTimeout(()=>{
+        //         console.log("audio");
+        //         fn()
+        //     },3000)
+        // }
+        // function step4(){
+        //     setTimeout(()=>{
+        //         console.log("post");
+        //     },2000)
+        // }
+        // // step1();
+        // // step2();
+        // // step3();
+        // // step4();
+        // step1(()=>{
+        //     step2(()=>{
+        //         step3(()=>{
+        //             step4()
+        //         })
+        //     })
+        // })
+
     </script>
 </body>
+
 </html>
