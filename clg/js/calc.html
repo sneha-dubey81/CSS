@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #display{
+            height: 100px;
+            width: 346px;
+            background-color: rgb(37, 36, 36);
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 20px;
+        }
+        #calc{
+            height: 500px;
+            width: 350px;
+            background-color: rgb(36, 29, 29);
+        }
+        #one{
+            height: 355px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 2px;
+        }
+        button{
+            background-color: rgb(96, 95, 91);
+            height: 45px;
+            width: 69px;
+            border-radius: 100px;
+            margin-top: 5px;
+            font-size: 1rem;
+            color: white;
+        }
+        #zero{
+            width: 138px;
+        }
+        #op{
+            background-color: rgb(255, 140, 0);
+        }
+        #btn{
+            background-color: rgb(171, 164, 164);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="calc">
+            <input id="display">
+            <div id="one">
+                <button id="btn">C</button>
+                <button id="btn">..</button>
+                <button id="btn">%</button>
+                <button id="op">/</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button id="op">*</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button id="op">-</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button id="op">+</button>
+                <button id="zero">0</button>
+                <button>.</button>
+                <button id="op">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
